@@ -51,7 +51,7 @@ ____________________________________________________
 
       - Collection 의 종류
 
-        ![Collections Framework]()
+        ![Collections Framework](https://github.com/Hooooong/DAY4_Collections/blob/master/image/Collections%20Framework.png)
 
         - List
 
@@ -182,7 +182,7 @@ ____________________________________________________
 
   - Generic
 
-    ![Generic]()
+    ![Generic](https://github.com/Hooooong/DAY4_Collections/blob/master/image/Generic.png)
 
     - 제네릭(Generic)은 클래스 내부에서 사용할 데이터 타입을 외부에서 지정하는 기법을 의미한다.
 
