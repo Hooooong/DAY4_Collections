@@ -27,8 +27,7 @@ ____________________________________________________
        */
        int intArray[] = new int[10];
        /*
-        * 기본형인 int, long 등과 같은 타입들은 공간은 할당하는 것 만으로도
-        * default 값이 넣어진다.
+        * 기본형인 int, long 등과 같은 타입들은 공간은 할당하는 것 만으로도 default 값이 넣어진다.
         */
        System.out.println(intArray[7]);
        // 출력 : 0
@@ -51,8 +50,6 @@ ____________________________________________________
 
   - 제네릭(Generic)
 
-    ![Generic](https://github.com/Hooooong/DAY4_Collections/blob/master/image/Generic.png)
-
     - 제네릭(Generic)이란?
 
       - 제네릭(Generic)은 클래스 내부에서 사용할 데이터 타입을 외부에서 지정하는 기법을 의미한다.
@@ -71,6 +68,8 @@ ____________________________________________________
         ```
 
     - 제네릭(Generic) 사용 방법
+
+      ![Generic](https://github.com/Hooooong/DAY4_Collections/blob/master/image/Generic.png)  
 
       ```java
       /*
@@ -116,7 +115,8 @@ ____________________________________________________
 
         - List 컬렉션
 
-          index 를 포함하는 동적 객체배열. 순서를 유지하면서 저장하고, 중복저장이 가능하다. 종류는 ArrayList, LinkedList, Vector 가 있다.
+          index 를 포함하는 동적 객체배열. 순서를 유지하면서 저장하고, 중복저장이 가능하다.
+          종류는 ArrayList, LinkedList, Vector 가 있다.
 
           ```java
           // List 는 설계 인터페이스이기 때문에 new 선언으로 생성할 수 없다.
@@ -127,29 +127,30 @@ ____________________________________________________
           List<Item> list = new ArrayList<>();
 
           // 입력
-          list.add(new Item());		   // 0번 index 로 생성
+          list.add(new Item());       // 0번 index 로 생성
           // 입력
-          list.add(1, new Item());		// 배열의 크기를 늘리고 1번 이후의 index를
-                                          // 하나씩 증가시킨 후 1번 자리로 들어가게 된다.
+          list.add(1, new Item());    // 배열의 크기를 늘리고 1번 이후의 index를
+                                      // 하나씩 증가시킨 후 1번 자리로 들어가게 된다.
           // 입력
-          list.set(0, new Item());		// 0번 index를 삭제하고 새로운 new Item() 으로 대체힌다.
+          list.set(0, new Item());	// 0번 index를 삭제하고 새로운 new Item() 으로 대체힌다.
 
           // 검색
-          list.get(0);					 // 0번 index 출력
+          list.get(0);      // 0번 index 출력
           // 검색
-          list.size();					 // list 의 길이 출력
+          list.size();      // list 의 길이 출력
           // 검색
-          list.isEmpty();					// list가 비어있는지 여부
+          list.isEmpty();   // list가 비어있는지 여부
 
           // 삭제
-          list.remove(0);				   // 삭제할 아이템의 index를 지정한다. index를 삭제하고, 그 뒤에 아이템들을 한칸씩 이동해서 빈공간을 채운다.
+          list.remove(0);   // 삭제할 아이템의 index를 지정한다. index를 삭제하고, 그 뒤에 아이템들을 한칸씩 이동해서 빈공간을 채운다.
           // 삭제
-          list.clear();                     // list 전체 삭제
+          list.clear();     // list 전체 삭제
           ```
 
         - Set 컬렉션
 
-          index를 포함하고 중복값을 허용하지 않는 동적 객체배열. 순서를 유지하지 않고 저장한다. 종류는 HashSet, TreeSet이 있다.
+          index를 포함하고 중복값을 허용하지 않는 동적 객체배열. 순서를 유지하지 않고 저장한다.
+          종류는 HashSet, TreeSet이 있다.
 
           ```java
           // Set 는 설계 인터페이스이기 때문에 new 선언으로 생성할 수 없다.
@@ -177,6 +178,7 @@ ____________________________________________________
             * RETURN : boolean
             */
           while(iterator.hasNext()) {
+
               /*
                * set의 값을 가져오는 메소드
                *
@@ -198,7 +200,7 @@ ____________________________________________________
           // 검색
           set.size();          // set 의 크기를 검색
           // 검색
-          set.isEmpty();        // set 이 비있는지 검색
+          set.isEmpty();       // set 이 비있는지 검색
 
           //삭제
           set.remove("봉봉1");  // set의 단일 객체 삭제
@@ -208,7 +210,8 @@ ____________________________________________________
 
         - Map 컬렉션
 
-          Key, value 로 구성된 동적 객체배열. Value 는 중복이 되지만, Key 는 중복이 불가능하다. 종류는 HashMap, HashTable, TreeMap, Properties이 있다.
+          Key, value 로 구성된 동적 객체배열. Value 는 중복이 되지만, Key 는 중복이 불가능하다.
+          종류는 HashMap, HashTable, TreeMap, Properties이 있다.
 
           ```java
           // Map 는 설계 인터페이스이기 때문에 new 선언으로 생성할 수 없다.
@@ -252,7 +255,7 @@ ____________________________________________________
           // 검색
           map.containsKey(1);       // map에 1이란 키가 있는지 검색
           // 검색
-          map.containsKey("이흥기"); // map에 이흥기 란 값이 있는지 검색
+          map.containsKey("이흥기");  // map에 이흥기 란 값이 있는지 검색
 
           // 삭제
           map.clear();              // map 전체 삭제
