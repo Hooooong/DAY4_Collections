@@ -49,7 +49,7 @@ ____________________________________________________
    즉, JAVA의 Collection이란 객체들을 모아놓고 제어, 관리 하기 위해 필요한 객체들을 모아놓은 객체들(클래스,인터페이스)을
    의미한다.
 
-      - Collection 의 종류
+      - Collection 의 종류(가장 많이 쓰는 것만 알아보자)
 
         ![Collections Framework](https://github.com/Hooooong/DAY4_Collections/blob/master/image/Collections%20Framework.png)
 
