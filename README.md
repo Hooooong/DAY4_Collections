@@ -248,15 +248,14 @@ ____________________________________________________
           for(int key : keys) {
             System.out.println(map.get(key));
           }
-
-          // 검색
-          map.size();               // map의 총 키 갯수를 검색
-          // 검색
-          map.isEmpty();            // map이 비어있는지 검색
           // 검색
           map.containsKey(1);       // map에 1이란 키가 있는지 검색
           // 검색
           map.containsKey("이흥기");  // map에 이흥기 란 값이 있는지 검색
+          // 검색
+          map.size();               // map의 총 키 갯수를 검색
+          // 검색
+          map.isEmpty();            // map이 비어있는지 검색
 
           // 삭제
           map.clear();              // map 전체 삭제
